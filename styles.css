@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav Bar Styles*/
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  border-top: 5px solid #6a737d;
+}
+
+.left-side {
+  display: flex;
+}
+
+.navbar-wrapper > .left-side > div {
+  margin-right: 30px;
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.navbar-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navbar-link-wrapper a {
+  color: #6a737d;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navbar-link-wrapper:hover {
+  border-bottom: solid 1px #959da5;
+}
+
+.navbar-link-wrapper a:hover {
+  color: black;
+}
+
+/* Projects Styles*/
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 22%;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.title-wrapper p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* About style */
+
+.profile-image-wrapper img {
+  border-radius: 50%;
+}
+
+.profile-content-wrapper {
+  text-align: center;
+  padding-right: 80px;
+}
+
+.profile-content-wrapper h1 {
+  color: rgb(149, 152, 170);
+}
+
+.one-column-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 100px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}

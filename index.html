@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Skrixx68 Github Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar-wrapper">
+        <div class="left-side">
+          <div class="navbar-link-wrapper">
+            <a href="index.html">Projects</a>
+          </div>
+          <div class="navbar-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="brand">
+            <div>Skrixx68</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="two-column-wrapper" id="container">
+          <div
+            class="portfolio-item-wrapper"
+            onclick="location.href='https://github.com/skrixx68/PWBolt-GUI';"
+            style="cursor: pointer"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(img/PWBOLT-GUI.png)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p>PWBOLT-GUI</p>
+              </div>
+
+              <div class="subtitle">
+                <p>Password Manager made with C# and REST-API as service</p>
+                <p>Feb 22, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(img/PWBOLT-CLI.PNG)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p>PWBOLT-CLI</p>
+              </div>
+
+              <div class="subtitle">
+                <p>
+                  Password Manager made with C# Console and simple REST-API as
+                  service
+                </p>
+                <p>Feb 11, 2021</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+            onclick="location.href='https://github.com/skrixx68/ADBTransfer';"
+            style="cursor: pointer"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(img/ADBTRANSFER.PNG)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p>ADB File Transfer</p>
+              </div>
+
+              <div class="subtitle">
+                <p>A simple tool used for transfering files via ADB CLI.</p>
+                <p>Jun 15, 2020</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+            onclick="location.href='https://github.com/skrixx68/Dota2-Overlay-2.0';"
+            style="cursor: pointer"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(/img/DOTA2OVERLAY.png)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p>Dota 2 Overlay</p>
+              </div>
+
+              <div class="subtitle">
+                <p>
+                  Similar to Slark Shadow Dance Passive. Its a simple helper
+                  tool that will display an overlay text if you are
+                  Visible/NotVisible by the enemy side.
+                </p>
+                <p>Sep 28, 2020</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+            onclick="location.href='https://github.com/skrixx68/PUBGLite-Trainer';"
+            style="cursor: pointer"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(img/PUBGTRAINER.PNG)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p>PUBGLite-Trainer(Experimental)</p>
+              </div>
+
+              <div class="subtitle">
+                <p>
+                  PUBGLite Multi Hack based on CETable made using C# Memory.Lib
+                  with anti-logs and memory r/w bypass
+                </p>
+                <p>Aug 6, 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(img/sample.jpg)"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="title-wrapper">
+                <p></p>
+              </div>
+
+              <div class="subtitle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("image-blur");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("image-blur");
+      });
+    });
+  </script>
+</html>
